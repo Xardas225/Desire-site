@@ -558,3 +558,48 @@
         grid-row: span 2;
     }
 }
+
+.blog__box{
+    margin-bottom: 100px;
+    &-title{
+        text-align: center;
+        max-width: 430px;
+        margin: 0 auto 30px;
+        @extend %title-font;
+        font-size: 36px;
+        line-height: 51px;
+        color: $title;
+    }
+    &__items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    &__item{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    &__item-links{
+        margin-bottom: 7px;
+    }
+    &__item-pic{
+        object-fit: cover;
+        margin-bottom: 19px;
+    }
+    &__item-date,
+    &__item-author,
+    &__item-theme{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+        color: #707070;
+    }
+    &__item-title{
+        @extend %title-font;
+        color: $title;
+        font-size: 24px;
+        line-height: 38px;
+    }
+}
