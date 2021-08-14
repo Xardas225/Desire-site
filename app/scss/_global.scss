@@ -64,3 +64,24 @@ body{
         padding: 0;
     }       
 }
+
+.info-email{
+    position: relative;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    color: $title;
+    padding-left: 32px;
+    display: inline-block;
+    margin-bottom: 22px;
+}
+.info-email:before{
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/email.svg);
+    background-repeat: no-repeat;
+}
