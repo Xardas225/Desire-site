@@ -17,6 +17,9 @@
         padding: 0;
         cursor: pointer;
     }
+    &__btn-menu{
+        display: none;
+    }
 }
 .logo{
     margin: 0 auto;
@@ -209,7 +212,11 @@
     z-index: 999;
     &__list{
         display: flex;
-        flex-wrap: wrap;
+        overflow-x: auto;
+    }
+    &__item{
+        position: relative;
+        padding-right: 8px;
     }
     &__item::after{
         content:  '/';
@@ -383,7 +390,7 @@
 .collection{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-column-gap: 30px;
+    grid-gap: 30px;
     &__item{
         position: relative;
         &:hover{
@@ -556,6 +563,7 @@
     &__buttons{
         text-align: center;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         margin: 0 -15px ;
@@ -1184,3 +1192,5 @@
         display: none;
     }
 }
+
+@import 'media';
