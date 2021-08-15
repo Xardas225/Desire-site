@@ -13,6 +13,11 @@ $(function () {
         autoplay: true
     });
 
+    $('.article-slider__box').slick({
+        prevArrow: '<button type="button" class="article-slider__arrow article-slider__arrowleft"><img src=".././images/arrowslider-left.svg" alt=""></button>',
+        nextArrow: '<button type="button" class="article-slider__arrow article-slider__arrowright"><img src=".././images/arrowslider-right.svg" alt=""></button>'
+    })
+
     $('.contact-slider').slick({
         dots: true,
         arrows: false,
